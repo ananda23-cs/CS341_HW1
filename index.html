@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Say Cheesecake</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="Title">Cheesecake Order Form</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cheesecake_mit_Beeren.jpg/240px-Cheesecake_mit_Beeren.jpg" 
+            alt="New York Cheesecake">
+        </div>
+        <div class="form">
+            <form>
+                <table>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Topping</th>
+                    </tr>
+                    <tr>
+                        <td class="selector">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="radio" id="plain" name="flavor">
+                            <label for="plain" class="plain">Plain</label><br>
+                            <input type="radio" id="cherry" name="flavor">
+                            <label for="cherry" class="cherry">Cherry</label><br>
+                            <input type="radio" id="chocolate" name="flavor">
+                            <label for="chocolate" class="chocolate">Chocolate</label><br>
+                        </td>
+                    </tr>
+                </table>
+                <section class="feedback">
+                    <label for="notes" class="notes">Notes:</label><br>
+                    <textarea id="notes" name="notes" rows=5 cols=45 placeholder="Enter any special instructions here."></textarea><br>
+                    <br>
+                    <input type="submit" value="Order">
+                </section>
+            </form>
+        </div>
+        <div class="pastorder">
+            <h2>Total orders past month</h2>
+            <ul>
+                <li class="cherry">11 cherry</li>
+                <li class="chocolate">17 chocolate</li>
+                <li class="plain">31 plain</li>
+            </ul>
+        </div>
+    </body>
+</html>
